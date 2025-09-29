@@ -2,16 +2,18 @@
 
 int main() {
 	int input;
+	int result = 0;
 	
 	printf("Enter number: \n");
 	scanf("%d", &input);
 	
 	for (int i; input >= 10; i++) {
-		printf("%d", input%10);
+		result = (result*10) + (input%10);
 		input = (input - (input % 10)) / 10;
 	}
 	
-	printf("%d", input);
+	result = (result*10) + (input%10);
+	printf("%d", result);
 	
 	return 0;
 }
