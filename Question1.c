@@ -8,7 +8,7 @@ int main() {
 	printf("Enter number: \n");
 	scanf("%d", &num);
 	
-	for (int i; i <= num; i++) {
+	for (int i = 1; i <= num; i++) {
 		result = result*i;
 	}
 	
